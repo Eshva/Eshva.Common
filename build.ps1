@@ -91,6 +91,6 @@ Build ".\Eshva.Common.sln" $versionSuffixOption
 
 Test ".\Eshva.Common.sln"
 
-MakePackage ".\sources\Eshva.Common\Eshva.Common.Collections.csproj" $artifactsFolder $versionSuffixOption
-MakePackage ".\sources\Eshva.Common\Eshva.Common.Testing.csproj" $artifactsFolder $versionSuffixOption
-MakePackage ".\sources\Eshva.Common\Eshva.Common.Tpl.csproj" $artifactsFolder $versionSuffixOption
+MakePackage ".\sources\Eshva.Common.Collections\Eshva.Common.Collections.csproj" $artifactsFolder $versionSuffixOption
+MakePackage ".\sources\Eshva.Common.Testing\Eshva.Common.Testing.csproj" $artifactsFolder $versionSuffixOption
+MakePackage ".\sources\Eshva.Common.Tpl\Eshva.Common.Tpl.csproj" $artifactsFolder $versionSuffixOption
