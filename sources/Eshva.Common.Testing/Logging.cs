@@ -1,5 +1,7 @@
 #region Usings
 
+using System;
+using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Sinks.InMemory;
@@ -12,8 +14,10 @@ namespace Eshva.Common.Testing
 {
   public static class Logging
   {
-    public static Container AddLogging(this Container container, ITestOutputHelper testOutput)
+    public static Container AddLogging(this Container container, [NotNull] ITestOutputHelper testOutput)
     {
+      if (testOutput == null) throw new ArgumentNullException(nameof(testOutput));
+
       container.RegisterInstance(GetLoggerFactory(testOutput));
       container.Register(
         typeof(ILogger<>),
