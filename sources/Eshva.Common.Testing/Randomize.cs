@@ -31,6 +31,29 @@ namespace Eshva.Common.Testing
       return StringCreator.Get((int) length);
     }
 
+    /// <summary>
+    /// Produces a random integer value in the range specified.
+    /// </summary>
+    /// <remarks>
+    /// It tolerates switching the range start and finish values.
+    /// </remarks>
+    /// <param name="rangeStart">
+    /// The range start. Inclusive.
+    /// </param>
+    /// <param name="rangeFinish">
+    /// The range finish. Inclusive.
+    /// </param>
+    /// <returns>
+    /// A random integer between <paramref name="rangeStart" /> and <paramref name="rangeFinish" />.
+    /// </returns>
+    public static int Integer(int rangeStart, int rangeFinish)
+    {
+      var fromValue = Math.Min(rangeStart, rangeFinish);
+      var toValue = Math.Max(rangeStart, rangeFinish);
+      return Random.Next(fromValue, toValue + 1);
+    }
+
     private static readonly StringCreator StringCreator = new StringCreator();
+    private static readonly Random Random = new Random();
   }
 }
