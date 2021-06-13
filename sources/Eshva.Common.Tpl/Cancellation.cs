@@ -23,6 +23,15 @@ namespace Eshva.Common.Tpl
     public static CancellationTokenAwaiter GetAwaiter(this CancellationToken cancellationToken) =>
       new CancellationTokenAwaiter(cancellationToken);
 
+    /// <summary>
+    /// Creates a timeout cancellation token with specified timeout length.
+    /// </summary>
+    /// <param name="timeoutLength">
+    /// Timeout length after which token will signal timeout.
+    /// </param>
+    /// <returns>
+    /// A timeout cancellation token.
+    /// </returns>
     public static CancellationToken TimeoutToken(TimeSpan timeoutLength) => new CancellationTokenSource(timeoutLength).Token;
 
     /// <summary>
