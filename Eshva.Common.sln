@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		prepare-workspace.sh = prepare-workspace.sh
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eshva.Common.Tpl.UnitTests", "tests\Eshva.Common.Tpl.UnitTests\Eshva.Common.Tpl.UnitTests.csproj", "{EEDDC81A-033D-4AED-A246-F653C759FC17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{CFD85B53-DE6F-4EDB-9E02-73E7674D7E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD85B53-DE6F-4EDB-9E02-73E7674D7E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD85B53-DE6F-4EDB-9E02-73E7674D7E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDDC81A-033D-4AED-A246-F653C759FC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDDC81A-033D-4AED-A246-F653C759FC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDDC81A-033D-4AED-A246-F653C759FC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDDC81A-033D-4AED-A246-F653C759FC17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{037A5D14-4FD7-4B2E-8D8F-CF3706DE1B75} = {469DEC7C-004F-4CE9-A6A1-ED7FD67F47D4}
 		{35861E1B-AC06-409D-8555-F8F3DF20CB6B} = {469DEC7C-004F-4CE9-A6A1-ED7FD67F47D4}
+		{EEDDC81A-033D-4AED-A246-F653C759FC17} = {469DEC7C-004F-4CE9-A6A1-ED7FD67F47D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {968D9685-94C5-488F-9E7B-1E47532C739A}
